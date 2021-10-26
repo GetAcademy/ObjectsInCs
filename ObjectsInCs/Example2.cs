@@ -36,6 +36,13 @@ namespace ObjectsInCs
             };
             Console.WriteLine(per.Address.StreetName);
             Console.WriteLine(per.Employer.Address.StreetName);
+
+            var pAddress = new Address("Veien", "17", "1234", "Byen");
+            var eAddress = new Address("Gata", "71", "4321", "Byen");
+            var per2 = new Person("Per", "Olsen", 18, pAddress, new Employer("Bedriften AS", eAddress));
+        }
+
+
             /*
                 const per = {
                     firstName: 'Per',

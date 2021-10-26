@@ -6,6 +6,41 @@ namespace ObjectsInCs
     {
         static void Main(string[] args)
         {
+            //var myRectangle = new Rectangle
+            //{
+            //    X = 10,
+            //    Y = 5,
+            //    Width = 20,
+            //    Height = 4,
+            //};
+            var myRectangle = 
+                new Rectangle(10, 5, 20, 4);
+            //myRectangle.X = 50;
+            //Console.WriteLine(myRectangle.X);
+
+            Console.WriteLine(myRectangle.GetX());
+            myRectangle.SetX(10);
+            //Console.WriteLine(myRectangle.XX);
+            //myRectangle.XX = 7;
+            Console.WriteLine(myRectangle.Area);
+
+
+            var area = myRectangle.CalculateArea();
+            var circumference = myRectangle.CalculateCircumference();
+
+            Console.WriteLine(area);
+        }
+
+        /*
+        private static int CalculateArea(Rectangle myRectangle)
+        {
+            return myRectangle.Height * myRectangle.Width;
+        }
+         
+         */
+
+        static void MainX(string[] args)
+        {
             Console.WriteLine("Hello World!");
             /*
              *  personA = {
